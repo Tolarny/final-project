@@ -1,0 +1,377 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'kumbh sans', sans-serif;
+
+}
+.navbar{
+    background: #add8e6;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+
+.firstdiv{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+
+}
+#logo{
+    background-color: #0e2749;
+  
+    background-size:100% ;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+
+
+}
+.fr{
+    margin-right: 0.5rem;
+}
+
+.navebar{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    
+}
+.navy{
+    height: 80px;
+}
+.link{
+    color: #0e2749;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.butt{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0 1rem;
+    width: 100%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #0e2749;
+    color: #ffffff;
+    font-size: 20px;
+}
+.button:hover{
+    background: #1a3c47;
+    transition: all 0.3s ease;
+
+}
+.links:hover{
+    color: #1a3c47;
+    transition: all 0.3s ease;
+
+}
+
+@media screen and (max-width: 968px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1440px;
+        padding: 0;
+    }
+    .navebar{
+display: grid;
+grid-template-columns: auto;
+margin: 0;
+width: 100%;
+position: absolute;
+top: -1000px;
+opacity: 0;
+transition: all 0.5s ease;
+height: 50vh;
+z-index: -1;
+background: #1a3c47;
+    }
+    .navebar.active{
+        background:#1a3c47;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size:1.6rem;
+        
+    }
+    #logo{
+        padding-left: 25px;
+
+    }
+    .togglebar .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #ffffff;
+
+    }
+    .navy{
+        width: 100%;
+    }
+    .link{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        color: #ffffff;
+    }
+    #togglemenu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform:translate(5%, 20%);
+    }
+    .butt{
+        padding-bottom: 2rem;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 40px;
+        margin: 0;
+
+    }
+    .togglebar .bar{
+        display: block;
+        cursor: pointer;
+        color: #ffffff;
+    }
+   
+    #togglemenu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #togglemenu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #togglemenu.is-active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }   
+}
+
+
+/*i had to add comment because this code is getting too long*/
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0px;
+    padding: 30px 0px;
+    margin-top: 80px;
+
+}
+.news h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #0e2749;
+    margin: 20px;
+
+}
+.ini{
+    width: 900px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px #cdd0d6;
+    background-color: #ffffff;
+}
+.ini input{
+    width: 600px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: black
+
+}
+.ini a{
+width: 200px;
+height: 45px;
+background-color: #21416e;
+color: #ffffff;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 0.9rem;
+margin: auto 10px;
+margin-left: 100px;
+border-radius: 20px;
+text-decoration: none;
+
+}
+/*this is the code for my footer*/
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 1000;
+    left: 0;
+    background: #add8e6;
+    height: 100vh;
+  }
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .content p,a{
+    color: #21416e;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 22px;
+    font-weight: 600;
+    color: #21416e;
+    margin-bottom: 16px;
+  
+  }
+  footer .content p{
+    text-align: justify;
+  }
+  footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    color: #d9d9d9;
+    background: #1a3c47;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #1a3c47;
+    transition: all 0.3s ease-in-out;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color:  #21416e;
+  }
+  footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+    transition: all 0.3s ease;
+  }
+  .content .media-icons a:hover{
+    border-color: #1a3c47;
+  }
+  footer .bottom{
+    width: 100%;
+    text-align: right;
+    color: #21416e;
+    padding: 0 40px 5px 0;
+  }
+  footer .bottom a{
+    color: #1a3c47;
+    font-weight: 400;
+  }
+  footer a{
+    transition: all 0.3s ease;
+  }
+  footer a:hover{
+    color: #0e2749;
+  }
+  @media (max-width:1100px) {
+    footer .content .middle{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width:950px){
+    footer .content .box{
+      width: 50%;
+    }
+    .content .right{
+      margin-top: 40px;
+    }
+  }
+  @media (max-width:560px){
+    footer{
+      position: relative;
+    }
+    footer .content .box{
+      width: 100%;
+      margin-top: 30px;
+    }
+    footer .content .middle{
+      padding-left: 0;
+    }
+  }
